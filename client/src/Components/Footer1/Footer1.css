@@ -1,0 +1,20 @@
+.footer1 {
+  text-align: center;
+  width: 100vw;
+  height: 80px;
+  background: #f8f9ff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -3px 6px #0000000b;
+  background-color: #f8f9ff;
+}
+
+.footer1_title {
+  font: normal normal 600 20px/26px Open Sans;
+  letter-spacing: 0.96px;
+  color: #5861ae;
+}
+
+.footer1_message {
+  font: italic normal normal 10px/26px Open Sans;
+  letter-spacing: 0.4px;
+  color: #3d3d43;
+}

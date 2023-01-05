@@ -1,0 +1,19 @@
+.logout {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  font: normal normal normal 18px/19px Avenir;
+  border-left: 1px solid rgb(230, 228, 228);
+  cursor: pointer;
+  background-color: red;
+  color: #ffffff;
+  padding: .2rem 2rem;
+  transition: all 0.5s ease-out;
+}
+
+.home_pic>img {
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 50%;
+}

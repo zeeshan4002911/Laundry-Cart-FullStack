@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(../public/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../public/OpenSans-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+#catelog-table,
+#order-table {
+    max-height: 65vh;
+    display: block;
+    overflow-y: scroll;
+}
+
+/* Utility classes */
+
+.btn-vt {
+    color: #5861ae;
+    background-color: white;
+    border: 1px solid #5861ae;
+    border-radius: 4px;
+    margin: 0 2vw;
+    padding: .2rem 2rem;
+    cursor: pointer
+}
+
+.btn-vt-fill {
+    color: white;
+    background-color: #5861ae;
+    border: none;
+    border-radius: 4px;
+    margin: 0 2vw;
+    padding: .2rem 2rem;
+    cursor: pointer
+}
+
+.pad {
+    padding: 0 2rem;
+}
+
+/* Default Styling of Application */
+
+th {
+    background-color: #383737;
+    color: white;
+    font: normal normal 600 12px/48px Open Sans;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #EAEDF0;
+}
+
+#order-table tr {
+    height: 4vh;
+}
+
+#catelog-table tr {
+    height: 8vh;
+}
+
+thead>tr>th:first-child {
+    border-radius: .5rem 0 0 0;
+}
+
+thead>tr>th:last-child {
+    border-radius: 0 .5rem 0 0;
+}
+
+tbody>tr:nth-child(2n+2) {
+    background-color: #FAFAFA;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    background-color: black;
+}
+
+/* Summary CSS */
+
+#summary {
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 100;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+/* Media query for mobile device */
+@media only screen and (max-width: 500px) {
+    .header {
+        height: 5vh;
+    }
+
+    .header_title {
+        display: none;
+    }
+
+    .nav_lists {
+        height: 5vh;
+    }
+
+    .home_pic>img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .side-bar {
+        float: none;
+        width: 100vw;
+        height: 30px;
+        flex-direction: row;
+        padding-top: 5px;
+
+    }
+    .option {
+        height: 10vh;
+    }
+
+    #order-count {
+        margin-top: 5vh;
+    }
+
+    .logout {
+        top: 5vh;
+    }
+    .footer2 {
+        grid-template-columns: repeat(2, 50vw);
+    }
+}
